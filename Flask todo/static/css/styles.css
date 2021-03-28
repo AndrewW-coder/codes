@@ -1,0 +1,99 @@
+body {
+    --bg-color: #1c1e24;
+    --box-bg-color: #23262E;
+    --text-color: #ced2db;
+    --accent-color: #2ada9f;
+    --main-color: #ced2db;
+    --sub-color: #757b88;
+
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+}
+
+.box {
+    background: var(--box-bg-color);
+    padding: 3rem;
+    width: 40rem;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+    word-break: break-all;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.field {
+    width: 100%;
+    color: var(--text-color);
+    padding: 0.4rem 0;
+}
+
+.form {
+    display: flex;
+    border-bottom: 0.1rem solid var(--main-color);
+}
+
+.form:focus-within {
+    border-color: var(--accent-color);
+}
+
+::placeholder {
+    color: var(--sub-color);
+}
+
+.button {
+    color: var(--sub-color);
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--main-color);
+}
+
+.button:active {
+	transform: scale(0.9);
+}
+
+.submit {
+    font-size: 1.7em;
+    font-weight: 200;
+}
+
+.checkmark {
+    display: inline-block;
+    visibility: hidden;
+    pointer-events: none;
+    position: relative;
+    left: -1.05rem;
+    top: -0.1rem;
+    width: 0.3rem;
+    height: 0.6rem;
+    border: solid var(--accent-color);
+    border-width: 0 0.1rem 0.1rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check {
+    display: block;
+    position: relative;
+    top: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.2rem;
+}
